@@ -13,6 +13,7 @@ header {
   background-size: cover;
   min-height: 400px;
   padding-top: 50px;
+  padding-bottom: 50px;
   width: 100%; }
   header .img-profile-pic {
     border-radius: 50%;
@@ -22,6 +23,7 @@ header {
     background-image: url(../img/description.png);
     height: 300px;
     width: 400px;
+    max-width: 400px;
     position: relative; }
     header .profile-description span {
       position: absolute;
@@ -74,17 +76,17 @@ section.portfolio {
     padding-left: 8px;
     font-size: medium;
     font-weight: 500; }
-  section.portfolio .portfolio .col-md-4 {
+  section.portfolio .portfolio .col-xs-4 {
     padding: 8px; }
-    section.portfolio .portfolio .col-md-4 img {
+    section.portfolio .portfolio .col-xs-4 img {
       width: 100%; }
-    section.portfolio .portfolio .col-md-4 .img-portfolio {
+    section.portfolio .portfolio .col-xs-4 .img-portfolio {
       transition: all .2s ease-in-out; }
-      section.portfolio .portfolio .col-md-4 .img-portfolio:hover {
+      section.portfolio .portfolio .col-xs-4 .img-portfolio:hover {
         transform: scale(1.1); }
-  section.portfolio .portfolio .col-md-12 {
+  section.portfolio .portfolio .col-xs-12 {
     padding: 8px; }
-    section.portfolio .portfolio .col-md-12 .project-description {
+    section.portfolio .portfolio .col-xs-12 .project-description {
       padding: 10px;
       background-color: #f4f5f7;
       font-weight: 300;
@@ -102,7 +104,8 @@ section.portfolio {
       position: relative;
       display: inline-block;
       height: 166px;
-      width: 190px; }
+      width: 190px;
+      background: url(../img/clickhere.png) no-repeat; }
       section.portfolio .portfolio .macbookair-container .extra-stuff-container .extra-stuff-down {
         display: inline-block;
         margin-top: 5px; }
@@ -124,7 +127,8 @@ section.portfolio {
       section.portfolio .portfolio .macbookair-container .extra-stuff-container .extra-button-one {
         margin-top: 5px;
         margin-right: 10px;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        width: 100px; }
       section.portfolio .portfolio .macbookair-container .extra-stuff-container .extra-button-two {
         margin-top: 12px; }
       section.portfolio .portfolio .macbookair-container .extra-stuff-container .clickhere {
@@ -160,9 +164,60 @@ footer {
   text-shadow: 0px 2px #669644; }
 
 /* Smartphones */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .img-profile-pic {
-    width: inherit;
-    height: inherit; } }
+    width: 200px !important;
+    height: 200px !important;
+    margin-bottom: 50px; }
+
+  .profile-description {
+    width: 100% !important;
+    margin: auto; }
+    .profile-description div {
+      font-size: 13px !important; }
+
+  section.portfolio .mac {
+    display: none; }
+  section.portfolio .portfolio .macbookair-container {
+    display: none; }
+    section.portfolio .portfolio .macbookair-container .extra-stuff-container {
+      width: 100%; }
+      section.portfolio .portfolio .macbookair-container .extra-stuff-container .extra-buttons-wrapper {
+        display: inline-block; }
+      section.portfolio .portfolio .macbookair-container .extra-stuff-container .extra-button:hover {
+        transform: none; }
+      section.portfolio .portfolio .macbookair-container .extra-stuff-container .extra-button-one {
+        margin-left: 5px;
+        margin-right: 5px; }
+      section.portfolio .portfolio .macbookair-container .extra-stuff-container .extra-button-two {
+        margin-right: 5px; }
+      section.portfolio .portfolio .macbookair-container .extra-stuff-container .extra-button-three {
+        margin-top: 12px; }
+      section.portfolio .portfolio .macbookair-container .extra-stuff-container .clickhere {
+        display: none; } }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .img-profile-pic {
+    margin-bottom: 50px; }
+
+  .profile-description {
+    margin: auto; }
+
+  .imac-image {
+    left: 20%; }
+
+  .imac-screen {
+    left: 20%; }
+
+  .macbookair {
+    margin-left: 0 !important; }
+
+  .extra-stuff-container {
+    width: 340px !important; }
+
+  .extra-button-two {
+    margin-right: 10px; }
+
+  .extra-button-three {
+    margin-top: 12px; } }
 
 /*# sourceMappingURL=style.css.map */

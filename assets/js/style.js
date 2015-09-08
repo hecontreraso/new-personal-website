@@ -36,9 +36,9 @@ $(document).ready(function(){
 			+ '<ul>'
 			+ '<li>I\'m passionate about learning</li>'
 			+ '<li>I\'m a detail oriented person</li>'
-			+ '<li>Barchelor in computer science</li>'
+			+ '<li>Bachelor in computer science</li>'
 			+ '<li>I have high emotional intelligence qualities</li>'
-			+ '<li>If devoid of a task list given to me, I\'ll find something meaningful to do</li>'
+			+ '<li>I\'ll find something meaningful to do if devoid of a task list given to me, </li>'
 			+ '<li>Sometimes i\'m funny</li>'
 			+ '</ul>',
 		skills: '<p><strong>My skills:</strong></p>'

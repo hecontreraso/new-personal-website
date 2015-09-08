@@ -16,6 +16,7 @@ header{
 	
   min-height: 400px;
   padding-top: 50px;
+  padding-bottom: 50px;
 	width: 100%;
   .img-profile-pic{
 	  border-radius: 50%;
@@ -26,6 +27,7 @@ header{
   	background-image: url(../img/description.png);
   	height: 300px;
     width: 400px;
+    max-width: 400px;
     position: relative;
     span{
     	position: absolute;
@@ -88,7 +90,7 @@ section.portfolio{
 		font-weight: 500;
 	}
 	.portfolio{
-		.col-md-4{
+		.col-xs-4{
 	    padding: 8px;
 	    img{ width: 100%; }
 	    .img-portfolio{
@@ -96,7 +98,7 @@ section.portfolio{
 	    	&:hover{ transform: scale(1.1); }
 	    }
 		}
-		.col-md-12{
+		.col-xs-12{
 			padding: 8px;
 			.project-description{
 	    	padding: 10px;
@@ -119,13 +121,12 @@ section.portfolio{
 		    display: inline-block;
 				height: 166px;
 		    width: 190px;
+		    background: url(../img/clickhere.png) no-repeat;
 				.extra-stuff-down{
 					display: inline-block;
 			    margin-top: 5px;
 				}
-				.extra-buttons-wrapper{
-					display: none;
-				}
+				.extra-buttons-wrapper{ display: none; }
 				.extra-button{
 					transition: all .1s ease-in-out;
 					display: inline-block;
@@ -143,6 +144,7 @@ section.portfolio{
 					margin-top: 5px;
 				  margin-right: 10px;
 				  margin-bottom: 10px;
+		      width: 100px;
 				}
 				.extra-button-two{ margin-top: 12px; }
 				.clickhere{
@@ -186,9 +188,60 @@ footer{
 
 
 /* Smartphones */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.img-profile-pic{
-    width: inherit;
-    height: inherit;
+		width: 200px !important;
+  	height: 200px !important;
+    margin-bottom: 50px;
 	}
+  .profile-description{
+    width: 100% !important;
+    margin: auto;
+    div{ font-size: 13px !important; }
+  }
+	section.portfolio{
+		.mac{ display: none; }
+		.portfolio{
+			.macbookair-container{
+				display: none;
+				.extra-stuff-container{
+					width: 100%;
+					.extra-buttons-wrapper{ display: inline-block; }
+					.extra-button{
+						&:hover{ transform: none; }
+					}
+					.extra-button-one{
+					  margin-left: 5px;
+					  margin-right: 5px;
+					}
+					.extra-button-two{ margin-right: 5px; }
+					.extra-button-three{ margin-top: 12px; }
+					.clickhere{ display: none; }
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.img-profile-pic{
+    margin-bottom: 50px;
+	}
+	.profile-description{
+    margin: auto;
+	}
+	.imac-image{
+    left: 20%;
+	}
+	.imac-screen{
+    left: 20%;
+	}
+	.macbookair{
+		margin-left: 0 !important;
+	}
+	.extra-stuff-container {
+    width: 340px !important;
+	}
+	.extra-button-two{ margin-right: 10px; }
+	.extra-button-three{ margin-top: 12px; }
 }
