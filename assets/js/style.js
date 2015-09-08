@@ -48,8 +48,7 @@ $(document).ready(function(){
 			+ '<li>I can easily code pages from PSD files</li>'
 			+ '<li>Ruby on rails, PostgreSQL, heroku, AWS</li>'
 			+ '<li>I love entrepreneurship and startups, and know a thing or two about the process</li>'
-			+ '</ul>',
-		social: 'url(social-pages.html)'
+			+ '</ul>'
 	};
 
 	$(".img-portfolio").click(function(event) {
@@ -80,7 +79,9 @@ $(document).ready(function(){
 	});
 
 	$('.macbookair').click(function() {
-	  $('.extra-buttons-wrapper').slideDown("slow", function() {});
+	  $('.clickhere').fadeOut(function(){
+	  	$('.extra-buttons-wrapper').slideDown("slow", function() {});
+	  });
 	});
 
 	$('.extra-button').click(function(event){
@@ -90,7 +91,7 @@ $(document).ready(function(){
 	  		$('.imac-screen').load('assets/js/social-pages.html').fadeIn();
 			}
 			else{
-	  		$('.imac-screen').html(extraStuff[event.target.id]).fadeIn();
+	  		$('.imac-screen').html('<div class="wrapper">' + extraStuff[event.target.id] + '</p>').fadeIn();
 			}
 		});
 	});
