@@ -79,9 +79,9 @@ $(document).ready(function(){
 	});
 
 	$('.macbookair').click(function() {
-	  $('.clickhere').fadeOut(function(){
-	  	$('.extra-buttons-wrapper').slideDown("slow", function() {});
-	  });
+		console.log("eneterin");
+		$('.extra-stuff-container').css('background', 'url()');
+  	$('.extra-buttons-wrapper').slideDown("slow", function() {});
 	});
 
 	$('.extra-button').click(function(event){
