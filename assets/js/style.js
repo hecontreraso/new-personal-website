@@ -43,10 +43,12 @@ $(document).ready(function(){
 			+ '</ul>',
 		skills: '<p><strong>My skills:</strong></p>'
 			+ '<ul>'
-			+ '<li>HTML, CSS, javascript, jQuery, bootstrap</li>'
+			+ '<li>HTML, CSS, LESS, SASS, javascript, jQuery</li>'
 			+ '<li>AngularJS and Ionic</li>'
-			+ '<li>I can easily code pages from PSD files</li>'
 			+ '<li>Ruby on rails, PostgreSQL, heroku, AWS</li>'
+			+ '<li>HAML, RSpec, Capybara, MySQL, PostgreSQL</li>'
+			+ '<li>Github, bitbucket</li>'
+			+ '<li>I can easily code pages from PSD files</li>'
 			+ '<li>I love entrepreneurship and startups, and know a thing or two about the process</li>'
 			+ '</ul>'
 	};
